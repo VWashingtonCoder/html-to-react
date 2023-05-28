@@ -46,8 +46,8 @@ _You can copy and paste these checklists into your new repository and fill them 
 - [X] Get your react app to look EXACTLY the same as this html project
 - [X] Use props to customize components that are being used
 - [X] Use conditional rendering to render odd rows as dark and even rows as light with the "light" | "dark" class names
-- [] Abstract any REPEATED UI into Components
-- [] Use per-component CSS imports
+- [X] Abstract any REPEATED UI into Components
+- [X] Use per-component CSS imports
 
   For example if you have a `CharacterCard.css` you can have an import that looks like so
 
@@ -59,9 +59,9 @@ function CharacterCard() {
 }
 ```
 
-- [] Have at least one Class Component that uses props
-- [] Have at least one Functional Component that uses props
-- [] Transform the original data to get the data you want for each component
+- [X] Have at least one Class Component that uses props
+- [X] Have at least one Functional Component that uses props
+- [X] Transform the original data to get the data you want for each component
   - The characters in the table should be sorted by votes as shown in the html app
   - The characters table should only show the first top 5 characters
   - The character cards should show all characters, and does not need to be sorted
