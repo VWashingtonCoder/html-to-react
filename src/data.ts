@@ -1,8 +1,8 @@
-import { RatingType, CardDataType } from "./types";
+import { RatingDataType, CardDataType } from "./types";
 
 export const headerItems: string[]= ["about us", "info", "support us"];
 
-export const ratingsData: RatingType[] = [
+export const ratingsData: RatingDataType[] = [
     {
         name: "Alfonse Elrich", 
         skillSet: "Being Loveable, Alchemy", 

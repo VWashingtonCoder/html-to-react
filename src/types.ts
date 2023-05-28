@@ -1,12 +1,7 @@
-export type RatingType = {
+export type RatingDataType = {
   name: string;
   skillSet: string;
   votes: number;
-};
-
-export type RatingRowProps = {
-  rating: RatingType;
-  theme: string;
 };
 
 export type CardDataType = {
