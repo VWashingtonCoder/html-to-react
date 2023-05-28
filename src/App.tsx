@@ -1,14 +1,14 @@
-import './App.css';
-import Header from './Components/Header/Header';
-import CharacterRatings from './Components/CharacterRatings/CharacterRatings';
+import "./App.css";
+import Header from "./Components/Header/Header";
+import CharacterRatings from "./Components/CharacterRatings/CharacterRatings";
 
-function App() {'/'
+function App() {
   return (
     <>
       <Header />
       <CharacterRatings />
-    </>  
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
