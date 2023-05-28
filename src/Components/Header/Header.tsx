@@ -1,9 +1,10 @@
 import { Component } from "react";
 import "./Header.css";
+import { headerItems } from "../../data";
 
 export default class Header extends Component {
     render() {
-        const headerItems = ["about us", "info", "support us"];
+        
 
         return(
             <header>
