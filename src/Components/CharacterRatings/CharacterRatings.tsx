@@ -7,23 +7,27 @@ export default function CharacterRatings() {
     <section id="character-ratings">
       <h4>Top Characters</h4>
       <table>
-        <tr>
-          <th>Name</th>
-          <th>Skillset</th>
-          <th>Votes</th>
-        </tr>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Skillset</th>
+            <th>Votes</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          {ratingsData.map((rating, idx) => {
+            const theme = Number(idx) % 2 === 0 ? "dark" : "light";
 
-        {ratingsData.map((rating, idx) => {
-          const theme = Number(idx) % 2 === 0 ? "dark" : "light";
-
-          return (
-            <CharacterRatingRow 
-              key={idx} 
-              rating={rating} 
-              theme={theme} 
-            />
-          );
-        })}
+            return (
+              <CharacterRatingRow 
+                key={idx} 
+                rating={rating} 
+                theme={theme} 
+              />
+            );
+          })}
+        </tbody>
       </table>
     </section>
   );
