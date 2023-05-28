@@ -1,5 +1,6 @@
 import "./CharacterRatings.css";
 import { ratingsData } from "../../data";
+import CharacterRatingRow from "./CharacterRatingRow/CharacterRatingRow";
 
 export default function CharacterRatings() {
   return (
@@ -13,15 +14,14 @@ export default function CharacterRatings() {
         </tr>
 
         {ratingsData.map((rating, idx) => {
-          const { name, skillSet, votes } = rating;
           const theme = Number(idx) % 2 === 0 ? "dark" : "light";
 
           return (
-            <tr className={theme}>
-              <td>{name}</td>
-              <td>{skillSet}</td>
-              <td>{votes}</td>
-            </tr>
+            <CharacterRatingRow 
+              key={idx} 
+              rating={rating} 
+              theme={theme} 
+            />
           );
         })}
       </table>

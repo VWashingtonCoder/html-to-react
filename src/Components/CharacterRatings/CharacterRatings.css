@@ -23,25 +23,11 @@ table {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbjOHCw2pwjjUvQW4HsEctQyfzWcDmMAjr4ay6xj_zEZVpJQjm_JPdlkb3Lv64vVqRrQ0&usqp=CAU);
 }
 
-td,
 th {
+  font-weight: bold;
+  background-color: black;
+  color: white;
   border: 1px solid #aaaaaa;
   text-align: left;
   padding: 8px;
-}
-
-th {
-  font-weight: bold;
-}
-
-tr.dark {
-  background-color: #dddddde1;
-}
-tr.light {
-  background-color: #ffffffe1;
-}
-
-th {
-  background-color: black;
-  color: white;
 }
