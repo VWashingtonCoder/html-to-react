@@ -1,14 +1,20 @@
-import { RatingRowPropsType } from "../../../types";
 import "./CharacterRatingRow.css";
+import { CharacterType } from "../../../fma-data";
 
-export default function CharacterRatingRow({ 
-    rating: { name, skillSet, votes }, theme 
-} : RatingRowPropsType) {
-    return(
-        <tr className={theme} >
-            <td>{name}</td>
-            <td>{skillSet}</td>
-            <td>{votes}</td>
-        </tr>
-    )
+type RatingRowPropsType = {
+  character: CharacterType;
+  theme: string;
+};
+
+export default function CharacterRatingRow({
+  character: { name, skillset, votes },
+  theme,
+}: RatingRowPropsType) {
+  return (
+    <tr className={theme}>
+      <td>{name}</td>
+      <td>{skillset.join(", ")}</td>
+      <td>{votes}</td>
+    </tr>
+  );
 }
